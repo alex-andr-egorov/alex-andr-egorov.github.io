@@ -1,3 +1,12 @@
+:root{                                                  /*variable*/
+    --main-color: rgb(0, 0, 0);                   
+    --secondary-color: rgb(26, 26, 26);
+    --font-color: rgb(255, 255, 255);
+    --link-color: #ff4e45;
+    --gap: 15px;
+
+}
+
 body, h1, h2, ul, p {
     margin: 0;
 }
@@ -5,14 +14,14 @@ ul {
     padding: 0;
     list-style: none;
 }
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: 0.3s;                   /*затримка */
+}
 
-
-
-:root{                                                  /*variable*/
-    --main-color: rgb(0, 0, 0);                   
-    --secondary-color: rgb(26, 26, 26);
-    --font-color: rgb(255, 255, 255);
-    --gap: 15px;
+ a:hover, a:focus, a:active {            /*ефект Хавер та хавер з Таб */
+    color: aqua;
 }
 
 html {
@@ -47,10 +56,10 @@ footer {
 .avatar {
     --avatar-size: 200px;
 
-    display: block;              /* block element*/
+    display: block;                         /* block element*/
     width: var(--avatar-size);
     height: var(--avatar-size);
-    object-fit: cover;          /* квадратна картинка*/
+    object-fit: cover;                      /* квадратна картинка*/
     border-radius: 50%;
     margin-bottom: var(--gap);
 }
@@ -59,7 +68,7 @@ footer {
 }
 
 .language {
-    position: absolute;      /* Go to right */
+    position: absolute;                     /* Go to right */
     top: 0;
     right: 0;
 }
