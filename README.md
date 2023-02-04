@@ -1,5 +1,5 @@
 # personal
-Installed extansion:
+Installed extansion to VSCode:
 
 1.Auto import
 
