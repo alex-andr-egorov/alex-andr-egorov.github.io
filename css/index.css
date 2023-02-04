@@ -24,19 +24,28 @@ body, .avatar, .language{
     margin: 0 auto;              /*centr*/
 }
 
-.avatar, header, main {
+.avatar, header, main, h1, .links, .description {
     margin-bottom: var(--gap);
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 500px;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--gap) * 2);  /*none skrole*/
     background-color: var(--main-color);
     padding: var(--gap);
 }
 
+header {
+    position: relative;
+}
+footer {
+    margin-top: auto;
+}
+
 .avatar {
-    --avatar-size: 250px;
+    --avatar-size: 200px;
 
     display: block;              /* block element*/
     width: var(--avatar-size);
@@ -45,12 +54,14 @@ body {
     border-radius: 50%;
     margin-bottom: var(--gap);
 }
-.nickname, .language, h1, .description, .email, footer {
+.nickname, h1, .description, .email, footer {
     text-align: center;
 }
 
 .language {
-    display: block;
+    position: absolute;      /* Go to right */
+    top: 0;
+    right: 0;
 }
 .links {
     display: flex;
