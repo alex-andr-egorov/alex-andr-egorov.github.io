@@ -40,7 +40,7 @@ body, .avatar, .language{
 body {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 290px;
     min-height: calc(100vh - var(--gap) * 2);  /*none skrole*/
     background-color: var(--main-color);
     padding: var(--gap);
@@ -53,8 +53,14 @@ footer {
     margin-top: auto;
 }
 
+.language {
+    position: absolute;                     /* Go to right */
+    top: 0;
+    right: 0;
+}
+
 .avatar {
-    --avatar-size: 200px;
+    --avatar-size: 150px;
 
     display: block;                         /* block element*/
     width: var(--avatar-size);
@@ -63,27 +69,31 @@ footer {
     border-radius: 50%;
     margin-bottom: var(--gap);
     border: 2px solid var(--link-color);
-
-}
-.nickname, h1, .description, .email, footer {
-    text-align: center;
 }
 
-.language {
-    position: absolute;                     /* Go to right */
-    top: 0;
-    right: 0;
+.nickname{
+    font-size: 20px;
 }
+
+h1 {
+    font-size: 16px;
+}
+
 .links {
     display: flex;
     justify-content: center;
     gap: 5px;                           /* отступы*/          
 }
+
 .links img {
-    --link-size: 35px;
+    --link-size: 30px;
 
     height: var(--link-size);
     width: var(--link-size);
+}
+
+.nickname, h1, .description, .email, footer {
+    text-align: center;
 }
 
 .large-button {
@@ -91,13 +101,53 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 35px;
     padding-bottom: 1px;
-    border-bottom: 1px;
     border: 2px solid var(--link-color);
     background-color: var(--font-color);
     border-radius: 35px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 
+}
+
+@media screen and (min-width: 440px) {
+    body {
+
+        width: 410px; 
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 530px) {
+    body {
+
+        width: 500px; 
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .nickname{
+        font-size: 26px;
+    }
+    .links img {
+        --link-size: 35px;
+
+        height: var(--link-size);
+        width: var(--link-size);
+
+    }
+    .large-button {
+        height: 50px;
+        font-size: 20px;
+        
+    }
+    .avatar {
+        --avatar-size: 200px;
+    }
+}
+
+.text {
+    font-size: 18px;
 }
