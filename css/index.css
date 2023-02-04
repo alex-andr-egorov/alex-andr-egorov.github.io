@@ -1,22 +1,48 @@
 body, h1, h2, ul, p {
     margin: 0;
 }
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+
+:root{                                                  /*variable*/
+    --main-color: rgb(0, 0, 0);                   
+    --secondary-color: rgb(26, 26, 26);
+    --font-color: rgb(255, 255, 255);
+}
 
 html {
-    background-color: white;
+    background-color: var(--secondary-color);           /*using variable*/
+    color: var(--font-color);
+}
+
+body, .avatar, .language{
+    margin: 0 auto;              /*centr*/
 }
 
 body {
     width: 500px;
     min-height: 100vh;
-    background-color: aqua;
-    margin: 0 auto;             /* top centr */
-    
+    background-color: var(--main-color);
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;          /*квадратна картинка*/
+.avatar {
+    --avatar-size: 250px;
+
+    display: block;              /* block element*/
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    object-fit: cover;          /* квадратна картинка*/
     border-radius: 50%;
 }
+.nickname, .language, h1, .description, .email, footer {
+    text-align: center;
+}
+
+.language {
+    display: block;
+}
+
