@@ -18,3 +18,5 @@ Installed extansion to VSCode:
 8.Sryleline
 
 9.Sublime Text Keymap and Settings
+
+10. Using photoshop and https://realfavicongenerator.net/
