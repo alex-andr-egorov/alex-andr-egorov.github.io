@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="js-speaker-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="mail" name="email" id="email" />
+        <label for="tel">Telephon</label>
+        <input type="tel" name="tel" id="id" />
+        <button type="submit">Enter</button>
+        <br />
+        <input type="checkbox" name="topick" value='HTML' id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="topick" value='CSS' id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="topick" value='JavaScript' id="js">
+        <label for="js">JavaScript</label>
+        <br />
+
+        <div class="gropp">
+            <input type="radio" name="experions" value="junior" id="junior">
+            <label for="junior">Junior</label>
+            <input type="radio" name="experions" value="midle" id="midle">
+            <label for="midle">Midle</label>
+            <input type="radio" name='experions' value="senior" id="senior">
+            <label for="senior">Senior</label>
+        </div>
+        <label for="date">Date time</label>
+        <input type="datetime-local" name="date" id="date" />
+        <br />
+        <input type="file" name="pdf" id="pdf">
+        <label for="pdf">Download file</label>
+        <br />
+        <label for="coment">Coments</label>
+        <textarea name="coment" id="coment" rows="10"></textarea>
+        <br>
+        <button type="submit">Enter</button>
+
+    </form>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+                });
+        })();
+    </script>
+</body>
+
+</html>
