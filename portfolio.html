@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
 </head>
@@ -18,20 +18,20 @@
     <!-- Header -->
     <header class="header">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <ul class="header-nav">
-            <li class="header-nav__item">
-                <a href="./index.html" class="link">Студія</a>
+        <ul class="header__nav"> 
+            <li class="header__nav--item">
+                <a href="" class="inspect link  inspect-menu-line">Студія</a>
             </li>
-            <li class="header-nav__item">
-                <a href="./portfolio.html" class=" inspect link line">Портфоліо</a>
+            <li class="header__nav--item">
+                <a href="./portfolio.html" class="link ">Портфоліо</a>
             </li>
-            <li class="header-nav__item">
+            <li class="header__nav--item">
                 <a href="./contacts.html" class="link ">Контакти</a>
             </li>
         </ul>
-        <div class="contacts">
-            <a href="./form-mail.html" class="contacts-booton">
-                <div class="contacts-booton--mail">
+        <div class="header__contacts">
+            <a href="./form-mail.html" class="header__booton">
+                <div class="header__booton--mail">
                     <svg width="16" height="14" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
@@ -40,8 +40,8 @@
                 </div>
                 iehorov1995@gmail.com
             </a>
-            <a href="tel:0730927549" class="contacts-booton">
-                <div class="contacts-booton--phone">
+            <a href="tel:0730927549" class="header__booton">
+                <div class="header__booton--phone">
                     <svg width="12" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
@@ -244,33 +244,33 @@
         </ul>
     </section>
     <!-- footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="text-footer">
-                <a href="#" class="logo logo-footer"><span>Web</span><span class="studio">Studio</span></a>
-                <address class="address-footer">
+    <footer class="footer">
+        <div class="footer__content ">
+            <div class="footer__information footer__text">
+                <a href="#" class="logo logo__footer"><span>Web</span><span class="studio">Studio</span></a>
+                <address class="footer__address">
                     695 Park Ave, New York, NY 10065,<br>United States
                 </address>
-                <a href="#" class="item-footer">iehorov1995@gmail.com</a>
-                <a href="#" class="item-footer">+0730927549</a>
+                <a href="#" class="footer__item">iehorov1995@gmail.com</a>
+                <a href="#" class="footer__item">+0730927549</a>
             </div>
-            <div class="social-block_footer text-footer">
-                <h2 class="title-footer_social">Find us on</h2>
-                <div class="social-footer">
-                    <div class="social-icon"><img src="./image/footer/instagram.svg" class="image-icon" alt="instagram">
+            <div class="footer__social">
+                <h2 class="footer__social--title footer__text">Find us on</h2>
+                <div class="footer__social--imges">
+                    <div class="social__icon"><img src="./image/footer/instagram.svg" class="image__icon" alt="instagram">
                     </div>
-                    <div class="social-icon"><img src="./image/footer/twitter.svg" class="image-icon" alt="twitter">
+                    <div class="social__icon"><img src="./image/footer/twitter.svg" class="image__icon" alt="twitter">
                     </div>
-                    <div class="social-icon"><img src="./image/footer/linkedin.svg" class="image-icon" alt="linkedin">
+                    <div class="social__icon"><img src="./image/footer/linkedin.svg" class="image__icon" alt="linkedin">
                     </div>
-                    <div class="social-icon"><img src="./image/footer/facebook.svg" class="image-icon" alt="facebook">
+                    <div class="social__icon"><img src="./image/footer/facebook.svg" class="image__icon" alt="facebook">
                     </div>
                 </div>
             </div>
-            <div class="block-subscribe ">
-                <h2 class="title-footer_social">Підписатися на розсилку</h2>
+            <div class="footer__subscribe ">
+                <h2 class="footer__subscribe--title">Підписатися на розсилку</h2>
 
-                <div class="block-subscribe_function">
+                <div class="footer__subscribe--content">
                     <input type="mail" name="mail" id="mail" placeholder="E-mail">
                     <label for="mail">
                         <a href="#" class="booton">Підписка<span><img src="./image/footer/telegram.svg"
