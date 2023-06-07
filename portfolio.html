@@ -17,46 +17,66 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <ul class="header__nav"> 
-            <li class="header__nav--item">
-                <a href="" class="inspect link  inspect-menu-line">Студія</a>
-            </li>
-            <li class="header__nav--item">
-                <a href="./portfolio.html" class="link ">Портфоліо</a>
-            </li>
-            <li class="header__nav--item">
-                <a href="./contacts.html" class="link ">Контакти</a>
-            </li>
-        </ul>
-        <div class="header__contacts">
-            <a href="./form-mail.html" class="header__booton">
-                <div class="header__booton--mail">
-                    <svg width="16" height="14" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
-                            fill="#757575" />
-                    </svg>
-                </div>
-                iehorov1995@gmail.com
-            </a>
-            <a href="tel:0730927549" class="header__booton">
-                <div class="header__booton--phone">
-                    <svg width="12" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                            fill="#757575" />
-                    </svg>
-
-                </div>
-                073 092 75 49
-            </a>
+        <a href="" class="logo header__logo"><span>Web</span>Studio</a>
+        <button class="menu-button"
+        aria-expanded="false"
+        data-menu-button
+        aria-controls="menu--conteiner">
+            <svg class="icon" width="40" height="40" aria-label="mobil menu">
+                <use class='icon--menu' href="./image/header/sprite.svg#menu"></use>
+                <use class="icon--close" href="./image/header/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <div class="menu--conteiner" id="menu--conteiner"
+        data-menu>
+            Content menu
         </div>
+        <div class="adaptiv" >
+  
+                <ul class="header__nav"> 
+                    <li class="header__nav--item">
+                        <a href="" class="inspect link  inspect-menu-line">Студія</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a href="./portfolio.html" class="link ">Портфоліо</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a href="./contacts.html" class="link ">Контакти</a>
+                    </li>
+                </ul>
+
+
+            <div class="header__contacts">
+                <a href="./form-mail.html" class="header__booton">
+                    <div class="header__booton--mail">
+                        <svg width="16" height="14" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
+                                fill="#757575" />
+                        </svg>
+                    </div>
+                    iehorov1995@gmail.com
+                </a>
+                <a href="tel:0730927549" class="header__booton">
+                    <div class="header__booton--phone">
+                        <svg width="12" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+                                fill="#757575" />
+                        </svg>
+    
+                    </div>
+                    073 092 75 49
+                </a>
+            </div>
+
+        </div>
+        
     </header>
     <section class="nav">
         <ul class="progects">
             <li class="progects-list"><a href="./portfolio.htmls"
-                    class="progects-list_link progects-list_link--first">Усі</a></li>
+                    class="progects-list_link progects-list_link--first shadow">Усі</a></li>
             <li class="progects-list"><a href="" class="progects-list_link">Веб-сайти</a></li>
             <li class="progects-list"><a href="" class="progects-list_link">Додатки</a></li>
             <li class="progects-list"><a href="" class="progects-list_link">Дизайн</a></li>
@@ -81,9 +101,11 @@
                     </div>
 
 
+                    <div class="card--text">
+                        <p class="name">Проєкт Prime</p>
+                        <p class='work'>Маркетинг</p>
+                    </div>
 
-                    <p class="name">Проєкт Prime</p>
-                    <p class='work'>Маркетинг</p>
                 </a>
             </li>
 
@@ -103,8 +125,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Проєкт Boxes</p>
-                    <p class='work'>Веб-сайт</p>
+                    <div class="card--text">
+                        <p class="name">Проєкт Boxes</p>
+                        <p class='work'>Веб-сайт</p>
+                    </div>
+
                 </a>
             </li>
 
@@ -123,8 +148,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Inspiration has no Borders</p>
-                    <p class='work'>Дизайн</p>
+                    <div class="card--text">
+                        <p class="name">Inspiration has no Borders</p>
+                        <p class='work'>Дизайн</p>
+                    </div>
+
                 </a>
             </li>
             <li class="portfolio-item__list">
@@ -142,8 +170,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Технокряк</p>
-                    <p class='work'>Додаток</p>
+                    <div class="card--text">
+                        <p class="name">Технокряк</p>
+                        <p class='work'>Додаток</p>
+                    </div>
+
                 </a>
             </li>
             <li class="portfolio-item__list">
@@ -161,8 +192,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Постер New Orlean vs Golden Star</p>
-                    <p class='work'>Маркетинг</p>
+                    <div class="card--text">
+                        <p class="name">Постер New Orlean vs Golden Star</p>
+                        <p class='work'>Маркетинг</p>
+                    </div>
+
                 </a>
             </li>
             <li class="portfolio-item__list">
@@ -180,8 +214,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Ресторан Seafood</p>
-                    <p class='work'>Додаток</p>
+                    <div class="card--text">
+                        <p class="name">Ресторан Seafood</p>
+                        <p class='work'>Додаток</p>
+                    </div>
+
                 </a>
             </li>
             <li class="portfolio-item__list">
@@ -199,8 +236,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Inspiration has no Borders</p>
-                    <p class='work'>Веб-сайт</p>
+                    <div class="card--text">
+                        <p class="name">Inspiration has no Borders</p>
+                        <p class='work'>Веб-сайт</p>
+                    </div>
+
                 </a>
             </li>
             <li class="portfolio-item__list">
@@ -218,8 +258,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Видання Limited Edition</p>
-                    <p class='work'>Дизайн</p>
+                    <div class="card--text">
+                        <p class="name">Видання Limited Edition</p>
+                        <p class='work'>Дизайн</p>
+                    </div>
+
                 </a>
             </li>
             <li class="portfolio-item__list">
@@ -237,14 +280,20 @@
                             </div>
                         </div>
                     </div>
-                    <p class="name">Проєкт LAB</p>
-                    <p class='work'>Маркетинг</p>
+                    <div class="card--text">
+                        <p class="name">Проєкт LAB</p>
+                        <p class='work'>Маркетинг</p>
+                    </div>
+
                 </a>
             </li>
         </ul>
     </section>
+    
     <!-- footer -->
     <footer class="footer">
+
+
         <div class="footer__content ">
             <div class="footer__information footer__text">
                 <a href="#" class="logo logo__footer"><span>Web</span><span class="studio">Studio</span></a>
@@ -267,16 +316,20 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__subscribe ">
+            <div class="footer__subscribe">
                 <h2 class="footer__subscribe--title">Підписатися на розсилку</h2>
-
-                <div class="footer__subscribe--content">
-                    <input type="mail" name="mail" id="mail" placeholder="E-mail">
-                    <label for="mail">
-                        <a href="#" class="booton">Підписка<span><img src="./image/footer/telegram.svg"
-                                    alt="Telegram"></span></a>
-                    </label>
-
+                <div class="footer__subscribe--block">
+                    <div class="footer__subscribe--input">
+                        <input type="mail" name="mail" id="mail" placeholder="E-mail">
+                    </div>
+                    <div class="footer__subscribe--booton">
+                        <label for="mail">
+                            <a href="#" class="booton">Підписка<span><img src="./image/footer/telegram.svg"
+                                        alt="Telegram"></span></a>
+                        </label>
+                    </div>
+    
+    
                 </div>
 
             </div>
