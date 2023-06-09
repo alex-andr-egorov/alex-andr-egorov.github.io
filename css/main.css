@@ -150,6 +150,13 @@ li {
   margin-left: 22px;
   margin-right: 32px;
 }
+@media screen and (min-width: 1600px) {
+  .header__logo {
+    margin-right: 200px;
+    margin-left: 160px;
+  }
+}
+
 .logo {
   font-family: Raleway;
   font-size: 24px;
@@ -239,7 +246,7 @@ a span {
 @media screen and (min-width: 720px) {
   .header__contacts {
     display: block;
-    margin-right: 12px;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1600px) {

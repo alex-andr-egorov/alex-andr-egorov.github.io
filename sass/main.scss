@@ -132,6 +132,10 @@ li{
 margin-left: 22px;
 margin-right: 32px;
 @media  screen and (min-width: 1600px) {
+    margin-right:200px;
+    margin-left: 160px;
+
+
     }
 }
 .logo {
@@ -226,7 +230,7 @@ a span {
 
     @media screen and (min-width: 720px) {
         display: block;
-        margin-right: 12px;
+        margin-right: 20px;
     }
     @media screen and (min-width: 1600px) {
         display: flex;
