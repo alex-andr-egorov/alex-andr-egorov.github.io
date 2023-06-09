@@ -83,13 +83,17 @@ button {
 
 .adaptiv {
     display: none;
+
     @media screen and (min-width: 720px) {
         display: flex;
+        justify-content: space-between;
         width: 100%;
     }
     @media screen and (min-width: 1600px) {
         display: flex;
+        justify-content: space-between;
         width: 100%;
+
     }
 
 }
@@ -125,9 +129,9 @@ li{
     list-style: none;
 }
 .header__logo {
-margin-left: 15px;
+margin-left: 22px;
+margin-right: 32px;
 @media  screen and (min-width: 1600px) {
-    margin-left: 12%;
     }
 }
 .logo {
@@ -188,10 +192,11 @@ a span {
 
 .header__nav {
     display: flex;
-    height: 80px;
     align-items: center;
     @media screen and (min-width: 720px) {
-        margin-left: 7%;
+        display: flex;
+
+
 
     }
     @media screen and (min-width: 1600px) {
@@ -200,12 +205,15 @@ a span {
 }
 
 .header__nav--item + .header__nav--item{
-    margin-left: 30px;                      
+    margin-left: 30px;
 }
 .link {
-    padding-bottom: 48% ;
+    @media screen and (min-width: 420px) {
+        padding: 22px 0px;
+
+    }
     @media screen and (min-width: 1600px) {
-        padding-bottom: 68% ;
+        padding: 32px 0px ;
 
     }
     
@@ -215,7 +223,6 @@ a span {
     color: var(--color-blue);
 }
 .header__contacts {
-    margin-right: 4px;
 
     @media screen and (min-width: 720px) {
         margin-top: 16px;
@@ -224,7 +231,6 @@ a span {
     @media screen and (min-width: 1600px) {
         display: flex;
         margin-top: 0px;
-        margin-left: 30%;
     }
 
 }
@@ -1058,4 +1064,13 @@ position: absolute;
     border-radius: 5px;
     border-color: #1386e4;
     box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.18);
+} 
+// CONTACTS
+.section__contacts{
+padding-top: 30px;
+font-size: 22px;
+line-height: 50px;
+text-align: justify;
+width: 400px;
+
 }

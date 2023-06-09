@@ -32,13 +32,13 @@
 
             <ul class="header__nav"> 
                 <li class="header__nav--item">
-                    <a href="" class="inspect link">Студія</a>
+                    <a href="" class=" link">Студія</a>
                 </li>
                 <li class="header__nav--item">
                     <a href="./portfolio.html" class="link ">Портфоліо</a>
                 </li>
-                <li class="header__nav--item inspect-menu-line">
-                    <a href="./contacts.html" class="link ">Контакти</a>
+                <li class="header__nav--item">
+                    <a href="./contacts.html" class="inspect link inspect-menu-line">Контакти</a>
                 </li>
             </ul>
 
@@ -77,13 +77,20 @@
 </header>
 
 <section>
-Почта: alexandregorov001@gmail.com
-Телефон: 0730927549
-Viber: інформація доповнюється...
-Telegram: інформація доповнюється...
+    <div class="section__contacts">
+        Почта: alexandregorov001@gmail.com
+        <br/>
+        Телефон: 0730927549
+        <br>
+        Viber: інформація доповнюється...
+        <br>
+        Telegram: інформація доповнюється...
+    </div>
+
 </section>
 <!-- footer -->
 <footer class="footer">
+
     <div class="footer__content ">
         <div class="footer__information footer__text">
             <a href="#" class="logo logo__footer"><span>Web</span><span class="studio">Studio</span></a>
@@ -96,7 +103,7 @@ Telegram: інформація доповнюється...
         <div class="footer__social">
             <h2 class="footer__social--title footer__text">Find us on</h2>
             <div class="footer__social--imges">
-                <div class="social__icon"><img src="./image/footer/instagram.svg" class="image__icon" alt="instagram">
+                <div class="social__icon"><img src="./image/footer/instagram.svg" class="image__icon" alt="instagram" >
                 </div>
                 <div class="social__icon"><img src="./image/footer/twitter.svg" class="image__icon" alt="twitter">
                 </div>
@@ -106,19 +113,21 @@ Telegram: інформація доповнюється...
                 </div>
             </div>
         </div>
-        <div class="footer__subscribe ">
+        <div class="footer__subscribe">
             <h2 class="footer__subscribe--title">Підписатися на розсилку</h2>
+            <div class="footer__subscribe--block">
+                <div class="footer__subscribe--input">
+                    <input type="mail" name="mail" id="mail" placeholder="E-mail">
+                </div>
+                <div class="footer__subscribe--booton">
+                    <label for="mail">
+                        <a href="#" class="booton">Підписка<span><img src="./image/footer/telegram.svg"
+                                    alt="Telegram"></span></a>
+                    </label>
+                </div>
 
-            <div class="footer__subscribe--input">
-                <input type="mail" name="mail" id="mail" placeholder="E-mail">
-            </div>
-            <div class="footer__subscribe--booton">
-                <label for="mail">
-                    <a href="#" class="booton">Підписка<span><img src="./image/footer/telegram.svg"
-                                alt="Telegram"></span></a>
-                </label>
-            </div>
 
+            </div>
 
         </div>
     </div>
