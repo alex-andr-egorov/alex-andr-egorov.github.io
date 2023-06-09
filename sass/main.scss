@@ -74,7 +74,7 @@ button {
     background-color: palegoldenrod;
     padding: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     &.is-open {
         display: block;
     }
@@ -225,7 +225,6 @@ a span {
 .header__contacts {
 
     @media screen and (min-width: 720px) {
-        margin-top: 16px;
         display: block;
     }
     @media screen and (min-width: 1600px) {
@@ -234,13 +233,7 @@ a span {
     }
 
 }
-.contacts-item{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 0.8;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
+
 
 
 
