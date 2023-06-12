@@ -961,6 +961,7 @@ label .booton {
     top: 0;
     left: 0;
     opacity: 0;
+    overflow: auto;
 
     &:target{
         opacity: 1;
@@ -973,7 +974,7 @@ label .booton {
 .block-form {
     position: absolute;
 
-    top: 25%;
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
