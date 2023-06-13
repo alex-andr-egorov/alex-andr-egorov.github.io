@@ -449,23 +449,9 @@ section {
     line-height: 1;
     letter-spacing: 0.03em;
     color: #757575;
-    // &:not(:first-child) {
-    //     padding-bottom: 30px;
-    // }
 }
 
 
-
-// .name {
-//     padding: 16px 0 16px 0;
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 1;
-//     letter-spacing: 0.03em;
-
-
-// }
 
 .text {
     font-size: 15px;
@@ -528,12 +514,7 @@ section {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 15px;
-    // &:not(:last-child) {
-    //     margin-bottom: 30px;
-    // }
-    // &:nth-last-child(n-2) {
-    //     margin-bottom: 30px;
-    // }
+
 }
 .name { 
     padding: 16px 0 16px 0;
@@ -871,7 +852,6 @@ label .booton {
 
 .overlay{
     position: absolute;
-    opacity: 0.5;
     top: 0;
     left: 0;
     width: 100%;
