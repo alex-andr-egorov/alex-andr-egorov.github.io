@@ -942,6 +942,10 @@ label .booton {
     left: 0;
     opacity: 0;
     overflow: auto;
+    display: none;
+    &.is-open {
+        display: block;
+    }
 
     &:target{
         opacity: 1;
