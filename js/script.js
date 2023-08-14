@@ -34,6 +34,35 @@
 
   button.addEventListener('click', () => {
     popup.classList.add('is-open');
+
+  });
+  close.addEventListener('click', () => {
+    popup.classList.remove('is-open');
+    
+  })
+})();
+(() =>{
+  const button = document.querySelector('.header__booton .header__booton--mail');
+  const popup = document.querySelector('.popup');
+  const close = document.querySelector('.popup__close');
+
+  button.addEventListener('click', () => {
+    popup.classList.add('is-open');
+
+  });
+  close.addEventListener('click', () => {
+    popup.classList.remove('is-open');
+    
+  })
+})();
+(() =>{
+  const button = document.querySelector('.header__booton--mobil');
+  const popup = document.querySelector('.popup');
+  const close = document.querySelector('.popup__close');
+
+  button.addEventListener('click', () => {
+    popup.classList.add('is-open');
+
   });
   close.addEventListener('click', () => {
     popup.classList.remove('is-open');

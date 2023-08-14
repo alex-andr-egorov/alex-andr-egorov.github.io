@@ -71,7 +71,7 @@ button {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #f5f5dc;
+    background-color: #ecece8;
     opacity: 1;
     padding: 20px;
     text-align: center;
@@ -94,7 +94,6 @@ button {
     margin-top: 30px;
     & .header__booton {
         line-height: 3;
- 
 
     }
 
@@ -136,10 +135,12 @@ button {
     z-index: 1;
     border-bottom: solid 1px var(--color-content);
     @media screen and (min-width: 720px) {
-        width: 720px;
+        margin-left: -2px;
+        width: 724px;
     }
     @media  screen and (min-width: 1600px) {
-        width: 1600px;
+        margin-left: -2px;
+        width: 1604px;
         height: 80px;
         
     }
@@ -219,9 +220,6 @@ a span {
     align-items: center;
     @media screen and (min-width: 720px) {
         display: flex;
-
-
-
     }
     @media screen and (min-width: 1600px) {
 
@@ -305,6 +303,28 @@ a span {
         background-position: center;
     }
     
+}
+.header__booton--mobil {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.2;
+    letter-spacing: 0.02em;
+    &:hover path {
+        fill: var(--color-blue);
+    }
+    &:before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .header__booton--mail,
