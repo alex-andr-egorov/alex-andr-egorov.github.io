@@ -25,9 +25,9 @@ html {
     width: 720px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1480px) {
   html {
-    width: 1600px;
+    width: 1480px;
   }
 }
 
@@ -39,7 +39,7 @@ main {
     width: 720px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1480px) {
   main {
     width: 1600px;
   }
