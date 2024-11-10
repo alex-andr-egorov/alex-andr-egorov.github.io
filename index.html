@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Стили для скрытия GIF по умолчанию и выравнивания слева */
+      .left-aligned-gif {
+        display: none; /* Скрыто по умолчанию */
+        margin-left: 0; /* Выровнено по левому краю */
+        margin-right: auto;
+        width: 100px; /* Ширина */
+        height: 100px; /* Высота */
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 20px; /* Отступ сверху */
+      }
+    </style>
+  </head>
+  <body>
+    <button id="showGifButton" onclick="showGif()">Нажми сюда Иришка</button>
+    <img
+      src="Y2Ch.gif"
+      alt="Animated GIF"
+      class="left-aligned-gif"
+      id="myGif"
+    />
+
+    <script>
+      function showGif() {
+        document.getElementById("showGifButton").style.display = "none"; // Скрываем кнопку
+        document.getElementById("myGif").style.display = "block"; // Показываем GIF
+      }
+    </script>
+  </body>
+</html>
