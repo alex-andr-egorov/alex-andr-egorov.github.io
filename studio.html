@@ -3,42 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Много сердечек!</title>
     <style>
-      /* Стили для скрытия GIF по умолчанию и выравнивания слева */
-      .left-aligned-gif {
-        display: none; /* Скрыто по умолчанию */
-        margin-left: 0; /* Выровнено по левому краю */
-        margin-right: auto;
-        width: 100px; /* Ширина */
-        height: 100px; /* Высота */
-      }
+      /* Стили для кнопки */
       button {
-        background-color: #4caf50;
+        background-color: #ff4081;
         color: white;
         padding: 10px 20px;
         border: none;
         cursor: pointer;
         border-radius: 8px;
         font-size: 16px;
-        margin-top: 20px; /* Отступ сверху */
+        position: absolute;
+      }
+
+      /* Контейнер для сердечек */
+      #heartContainer {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+
+      /* Сердечко */
+      .heart {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        background-color: var(--heart-color);
+        animation: pulse 1.5s infinite ease-in-out;
+      }
+
+      .heart::before,
+      .heart::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: inherit;
+        border-radius: 50%;
+      }
+
+      .heart::before {
+        top: -25px;
+        left: 0;
+      }
+
+      .heart::after {
+        top: 0;
+        left: -25px;
+      }
+
+      /* Анимация пульсации */
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1) rotate(45deg);
+        }
+        50% {
+          transform: scale(1.2) rotate(45deg);
+        }
       }
     </style>
   </head>
   <body>
-    <button id="showGifButton" onclick="showGif()">Нажми сюда Иришка</button>
-    <img
-      src="Y2Ch.gif"
-      alt="Animated GIF"
-      class="left-aligned-gif"
-      id="myGif"
-    />
+    <div id="heartContainer">
+      <button id="movableButton">Нажимай Иришка</button>
+    </div>
 
     <script>
-      function showGif() {
-        document.getElementById("showGifButton").style.display = "none"; // Скрываем кнопку
-        document.getElementById("myGif").style.display = "block"; // Показываем GIF
+      const button = document.getElementById("movableButton");
+      let isDragging = false;
+
+      // Функция создания сердечка
+      function createHeart(x, y) {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+
+        // Генерация случайного цвета
+        const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 70%, 60%)`;
+        heart.style.setProperty("--heart-color", randomColor);
+
+        // Устанавливаем позицию сердечка
+        heart.style.left = `${x}px`;
+        heart.style.top = `${y}px`;
+
+        // Добавляем сердечко в контейнер
+        document.getElementById("heartContainer").appendChild(heart);
       }
+
+      // Начало перетаскивания
+      button.addEventListener("mousedown", (event) => {
+        isDragging = true;
+        button.style.position = "absolute";
+      });
+
+      // Перемещение кнопки и создание сердечек
+      document.addEventListener("mousemove", (event) => {
+        if (isDragging) {
+          // Перемещение кнопки
+          button.style.left = `${event.clientX - button.offsetWidth / 2}px`;
+          button.style.top = `${event.clientY - button.offsetHeight / 2}px`;
+
+          // Создание сердечка на позиции кнопки
+          createHeart(event.clientX, event.clientY);
+        }
+      });
+
+      // Завершение перетаскивания
+      document.addEventListener("mouseup", () => {
+        isDragging = false;
+      });
     </script>
   </body>
 </html>
