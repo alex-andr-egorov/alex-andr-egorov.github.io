@@ -149,7 +149,7 @@ button.is-open .icon--menu {
   position: fixed;
   height: 60px;
   background: #fff;
-  width: 480px;
+  width: 1400px;
   z-index: 1;
   border-bottom: solid 1px var(--color-content);
 }
@@ -162,7 +162,7 @@ button.is-open .icon--menu {
 @media screen and (min-width: 1400px) {
   .header {
     margin-left: -2px;
-    width: 1604px;
+    width: 1400px;
     height: 80px;
   }
 }
