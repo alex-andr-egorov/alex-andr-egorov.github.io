@@ -20,8 +20,15 @@ html {
   width: 480px;
   margin: auto;
 }
+
+@media screen and (min-width: 480px) {
+}
+
 @media screen and (min-width: 720px) {
   html {
+    width: 720px;
+  }
+  main {
     width: 720px;
   }
 }
@@ -29,10 +36,6 @@ html {
   html {
     width: 1400px;
   }
-}
-
-main {
-  width: 480px;
 }
 @media screen and (min-width: 720px) {
   main {
@@ -50,11 +53,12 @@ section + section + section:nth-child(2n) {
 }
 
 /* HEADER */
+
 button {
   background-color: transparent;
   border: none;
   margin-right: 15px;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 button .icon--close {
   display: none;
@@ -75,7 +79,7 @@ button.is-open .icon--menu {
   background-color: #ecece8;
   opacity: 1;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 22px;
   border-radius: 0 0 15px 15px;
 }
@@ -105,6 +109,8 @@ button.is-open .icon--menu {
 .adaptiv {
   display: none;
 }
+@media screen and (min-width: 420px) {
+}
 @media screen and (min-width: 720px) {
   .adaptiv {
     display: -webkit-box;
@@ -126,16 +132,14 @@ button.is-open .icon--menu {
     justify-content: space-between;
     width: 100%;
   }
+}
+.menu-button {
+  display: none; /* по умолчанию скрыта */
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
   .menu-button {
-    display: none;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .menu-button {
-    display: none;
+    display: block;
   }
 }
 

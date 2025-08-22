@@ -1,407 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <!-- Header -->
     <header id="header" class="header">
-        <a href="./studio.html" class="logo header__logo"><span>Web</span>Studio</a>
-        <button class="menu-button"
+      <a href="./studio.html" class="logo header__logo"
+        ><span>Web</span>Studio</a
+      >
+      <button
+        class="menu-button"
         aria-expanded="false"
         data-menu-button
-        aria-controls="menu--conteiner">
-            <svg class="icon" width="40" height="40" aria-label="mobil menu">
-                <use class='icon--menu' href="./image/header/sprite.svg#menu"></use>
-                <use class="icon--close" href="./image/header/sprite.svg#close"></use>
-            </svg>
-        </button>
-        <div class="menu--conteiner" id="menu--conteiner"
-        data-menu>
-            <div class="menu-button--block">
-                <ul class="menu-button--nav"> 
-                    <li class="menu-button--item">
-                        <a href="./studio.html" class="inspect link " >Студія</a>
-                    </li>
-                    <li class="menu-button--item">
-                        <a href="./portfolio.html" class="link">Портфоліо</a>
-                    </li>
-                    <li class="menu-button--item">
-                        <a href="./contacts.html" class="link" >Контакти</a>
-                    </li>
-                </ul>
-                <div class=" menu-button--contacts">
-                    <a href="#popup" class="header__booton" 
-                                 >
-                        <div class="header__booton--mail" >
-                            <svg width="16" height="14" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
-                                    fill="#757575" />
-                            </svg>
-                            
-                        </div>
-                        
-                        alexandregorov001@gmail.com
-                    </a>
-                    <a href="tel:0730927549" class="header__booton">
-                        <div class="header__booton--phone">
-                            <svg width="12" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                                    fill="#757575" />
-                            </svg>
-        
-                        </div>
-                        073 092 75 49
-                    </a>
-                </div>
+        aria-controls="menu--conteiner"
+      >
+        <svg class="icon" width="40" height="40" aria-label="mobil menu">
+          <use class="icon--menu" href="./image/header/sprite.svg#menu"></use>
+          <use class="icon--close" href="./image/header/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="menu--conteiner" id="menu--conteiner" data-menu>
+        <div class="menu-button--block">
+          <ul class="menu-button--nav">
+            <li class="menu-button--item">
+              <a href="./studio.html" class="inspect link">Студія</a>
+            </li>
+            <li class="menu-button--item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="menu-button--item">
+              <a href="./contacts.html" class="link">Контакти</a>
+            </li>
+          </ul>
+          <div class="menu-button--contacts">
+            <a href="#popup" class="header__booton">
+              <div class="header__booton--mail">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </div>
+
+              alexandregorov001@gmail.com
+            </a>
+            <a href="tel:0730927549" class="header__booton">
+              <div class="header__booton--phone">
+                <svg
+                  width="12"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+                    fill="#757575"
+                  />
+                </svg>
+              </div>
+              073 092 75 49
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="adaptiv">
+        <ul class="header__nav">
+          <li class="header__nav--item">
+            <a href="" class="inspect link inspect-menu-line">Студія</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="./portfolio.html" class="link">Портфоліо</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="./contacts.html" class="link">Контакти</a>
+          </li>
+        </ul>
+
+        <div class="header__contacts">
+          <a href="#popup" class="header__booton">
+            <div class="header__booton--mail">
+              <svg
+                width="16"
+                height="14"
+                viewBox="0 0 16 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
+                  fill="#757575"
+                />
+              </svg>
             </div>
 
-        </div>
-        <div class="adaptiv" >
-  
-                <ul class="header__nav"> 
-                    <li class="header__nav--item">
-                        <a href="" class="inspect link  inspect-menu-line">Студія</a>
-                    </li>
-                    <li class="header__nav--item">
-                        <a href="./portfolio.html" class="link ">Портфоліо</a>
-                    </li>
-                    <li class="header__nav--item">
-                        <a href="./contacts.html" class="link ">Контакти</a>
-                    </li>
-                </ul>
-
-
-            <div class="header__contacts">
-                <a href="#popup" class="header__booton" 
-                             >
-                    <div class="header__booton--mail" >
-                        <svg width="16" height="14" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
-                                fill="#757575" />
-                        </svg>
-                        
-                    </div>
-                    
-                    alexandregorov001@gmail.com
-                </a>
-                <a href="tel:0730927549" class="header__booton">
-                    <div class="header__booton--phone">
-                        <svg width="12" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                                fill="#757575" />
-                        </svg>
-    
-                    </div>
-                    073 092 75 49
-                </a>
+            alexandregorov001@gmail.com
+          </a>
+          <a href="tel:0730927549" class="header__booton">
+            <div class="header__booton--phone">
+              <svg
+                width="12"
+                height="16"
+                viewBox="0 0 10 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+                  fill="#757575"
+                />
+              </svg>
             </div>
-
+            073 092 75 49
+          </a>
         </div>
-        
+      </div>
     </header>
 
     <main>
-        <!-- Section -->
-        <section class="hero">
-            <div class="hero__block">
-                <h1 class="hero__block--title">ЕФЕКТИВНЕ РІШЕННЯ ДЛЯ<br /> ВАШЕГО БІЗНЕСУ</h1>
-                <a href="#" class="booton">Request our service</a>
+      <!-- Section -->
+      <section class="hero">
+        <div class="hero__block">
+          <h1 class="hero__block--title">
+            ЕФЕКТИВНЕ РІШЕННЯ ДЛЯ<br />
+            ВАШЕГО БІЗНЕСУ
+          </h1>
+          <a href="#" class="booton">Request our service</a>
+        </div>
+      </section>
+      <section class="hero--information">
+        <ul class="block">
+          <li
+            class="conteiner conteiner__information conteiner__information--antena"
+          >
+            <h2 class="container__title">УВАЖНІСТЬ ДО ДЕТАЛЕЙ</h2>
+            <p class="container__text">
+              Ми вникаємо у всі деталі, процесси, вашого бизнесу, щоб підібрати
+              індивідуальне рішення.
+            </p>
+          </li>
+          <li
+            class="conteiner conteiner__information conteiner__information--astronaut"
+          >
+            <div class="containerBackgraund">
+              <h2 class="container__title">ATTENTION TO DETAILS 2</h2>
+              <p class="container__text">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
             </div>
-
-        </section>
-        <section class="hero--information">
-            <ul class="block">
-                <li class="conteiner conteiner__information conteiner__information--antena">
-                    <h2 class="container__title">УВАЖНІСТЬ ДО ДЕТАЛЕЙ</h2>
-                    <p class="container__text">Ми вникаємо у всі деталі, процесси, вашого бизнесу, щоб підібрати
-                        індивідуальне рішення.</p>
-                </li>
-                <li class="conteiner conteiner__information conteiner__information--astronaut">
-                    <div class="containerBackgraund">
-                        <h2 class="container__title">ATTENTION TO DETAILS 2</h2>
-                        <p class="container__text">We go into all the details and processes of your business to develop a
-                            customized
-                            solution.</p>
-                    </div>
-
-                </li>
-                <li class="conteiner conteiner__information conteiner__information--clock">
-                    <h2 class="container__title">ATTENTION TO DETAILS 3</h2>
-                    <p class="container__text">We go into all the details and processes of your business to develop a
-                        customized
-                        solution.</p>
-                </li>
-                <li class="conteiner conteiner__information conteiner__information--vector">
-                    <h2 class="container__title">ATTENTION TO DETAILS 4</h2>
-                    <p class="container__text">We go into all the details and processes of your business to develop a
-                        customized Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos est eligendi odit
-                        at nisi tenetur deserunt aliquam quidem asperiores. Numquam expedita tempora corporis
-                        necessitatibus excepturi impedit magnam quas inventore.
-                        solution.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="section section--work">
-            <h1 class="section__title">Ми в роботі</h1>
-            <ul class="block">
-                <li class="item item__work">
-                    <img src="./image/img0.png" alt="img0 inform" width="370">
-                    <div class="section__information">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, temporibus non! Fugiat ab
-
-                    </div>
-
-                </li>
-                <li class="item item__work">
-                    <img src="./image/img1.png" alt="img1 inform work" width="370">
-                    <div class="section__information">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, temporibus non! Fugiat ab
-
-                    </div>
-                </li>
-                <li class="item item__work">
-                    <img src="./image/img2.png" alt="img2 inform site" width="370">
-                    <div class="section__information">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, temporibus non! Fugiat ab
-
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="section section--persons">
-            <h1 class="section__title">Наша Команда</h1>
-            <ul class='block'>
-                <li class="item persons">
-                    <img src="./image/team/img.jpg" alt="Alex photo" class="persons_photo" width="270">
-                    <p class="name">Christopher Walker</p>
-                    <p class="work">Product Designer</p>
-                    <div class="social">
-                        <div class="social__icon"><img src="./image/icon/instagram.svg" class="image__icon"
-                                alt="instagram">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/twitter.svg" class="image__icon" alt="twitter">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/linkedin.svg" class="image__icon" alt="linkedin">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/facebook.svg" class="image__icon" alt="facebook">
-                        </div>
-                    </div>
-
-                </li>
-                <li class="item persons">
-                    <img src="./image/team/img1.jpg" alt="Kylie photo" class="persons_photo" width="270">
-                    <p class="name">Kylie Evans</p>
-                    <p class="work">Frontend Developer</p>
-                    <div class="social">
-                        <div class="social__icon"><img src="./image/icon/instagram.svg" class="image__icon"
-                                alt="instagram">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/twitter.svg" class="image__icon" alt="twitter">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/linkedin.svg" class="image__icon" alt="linkedin">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/facebook.svg" class="image__icon" alt="facebook">
-                        </div>
-                    </div>
-                </li>
-                <li class="item persons">
-                    <img src="./image/team/img2.jpg" alt="Ryan Harris photo" class="persons_photo" width="270">
-                    <p class="name">Ryan Harris</p>
-                    <p class="work">Marketing</p>
-                    <div class="social">
-                        <div class="social__icon"><img src="./image/icon/instagram.svg" class="image__icon"
-                                alt="instagram">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/twitter.svg" class="image__icon" alt="twitter">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/linkedin.svg" class="image__icon" alt="linkedin">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/facebook.svg" class="image__icon" alt="facebook">
-                        </div>
-                    </div>
-                </li>
-                <li class="item persons">
-                    <img src="./image/team/img3.jpg" alt="Alex photo" class="persons_photo" width="270">
-                    <p class="name">Tyler Moore</p>
-                    <p class="work">UI Designer</p>
-                    <div class="social">
-                        <div class="social__icon"><img src="./image/icon/instagram.svg" class="image__icon"
-                                alt="instagram">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/twitter.svg" class="image__icon" alt="twitter">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/linkedin.svg" class="image__icon" alt="linkedin">
-                        </div>
-                        <div class="social__icon"><img src="./image/icon/facebook.svg" class="image__icon" alt="facebook">
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="section ">
-            <h1 class="section__title">Regular Customers</h1>
-            <ul class="company">
-                <li class='company__logo'> <a href="#">
-                        <img src="./image/company/group.png" alt="company">
-                    </a></li>
-                <li class='company__logo'> <a href="#">
-                        <img src="./image/company/group1.png" alt="company">
-                    </a></li>
-                <li class='company__logo'> <a href="#">
-                        <img src="./image/company/group2.png" alt="company">
-                    </a></li>
-                <li class='company__logo'> <a href="#">
-                        <img src="./image/company/Logo.svg" alt="company">
-                    </a></li>
-                <li class='company__logo'> <a href="#">
-                        <img src="./image/company/group4.png" alt="company">
-                    </a></li>
-                <li class='company__logo'> <a href="#">
-                        <img src="./image/company/group5.png" alt="company">
-                    </a></li>
-            </ul>
-        </section>
+          </li>
+          <li
+            class="conteiner conteiner__information conteiner__information--clock"
+          >
+            <h2 class="container__title">ATTENTION TO DETAILS 3</h2>
+            <p class="container__text">
+              We go into all the details and processes of your business to
+              develop a customized solution.
+            </p>
+          </li>
+          <li
+            class="conteiner conteiner__information conteiner__information--vector"
+          >
+            <h2 class="container__title">ATTENTION TO DETAILS 4</h2>
+            <p class="container__text">
+              We go into all the details and processes of your business to
+              develop a customized Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Nobis eos est eligendi odit at nisi tenetur
+              deserunt aliquam quidem asperiores. Numquam expedita tempora
+              corporis necessitatibus excepturi impedit magnam quas inventore.
+              solution.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="section section--work">
+        <h1 class="section__title">Ми в роботі</h1>
+        <ul class="block">
+          <li class="item item__work">
+            <img src="./image/img0.png" alt="img0 inform" width="370" />
+            <div class="section__information">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              temporibus non! Fugiat ab
+            </div>
+          </li>
+          <li class="item item__work">
+            <img src="./image/img1.png" alt="img1 inform work" width="370" />
+            <div class="section__information">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              temporibus non! Fugiat ab
+            </div>
+          </li>
+          <li class="item item__work">
+            <img src="./image/img2.png" alt="img2 inform site" width="370" />
+            <div class="section__information">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              temporibus non! Fugiat ab
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section section--persons">
+        <h1 class="section__title">Наша Команда</h1>
+        <ul class="block">
+          <li class="item persons">
+            <img
+              src="./image/team/img.jpg"
+              alt="Alex photo"
+              class="persons_photo"
+              width="270"
+            />
+            <p class="name">Christopher Walker</p>
+            <p class="work">Product Designer</p>
+            <div class="social">
+              <div class="social__icon">
+                <img
+                  src="./image/icon/instagram.svg"
+                  class="image__icon"
+                  alt="instagram"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/twitter.svg"
+                  class="image__icon"
+                  alt="twitter"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/linkedin.svg"
+                  class="image__icon"
+                  alt="linkedin"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/facebook.svg"
+                  class="image__icon"
+                  alt="facebook"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="item persons">
+            <img
+              src="./image/team/img1.jpg"
+              alt="Kylie photo"
+              class="persons_photo"
+              width="270"
+            />
+            <p class="name">Kylie Evans</p>
+            <p class="work">Frontend Developer</p>
+            <div class="social">
+              <div class="social__icon">
+                <img
+                  src="./image/icon/instagram.svg"
+                  class="image__icon"
+                  alt="instagram"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/twitter.svg"
+                  class="image__icon"
+                  alt="twitter"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/linkedin.svg"
+                  class="image__icon"
+                  alt="linkedin"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/facebook.svg"
+                  class="image__icon"
+                  alt="facebook"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="item persons">
+            <img
+              src="./image/team/img2.jpg"
+              alt="Ryan Harris photo"
+              class="persons_photo"
+              width="270"
+            />
+            <p class="name">Ryan Harris</p>
+            <p class="work">Marketing</p>
+            <div class="social">
+              <div class="social__icon">
+                <img
+                  src="./image/icon/instagram.svg"
+                  class="image__icon"
+                  alt="instagram"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/twitter.svg"
+                  class="image__icon"
+                  alt="twitter"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/linkedin.svg"
+                  class="image__icon"
+                  alt="linkedin"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/facebook.svg"
+                  class="image__icon"
+                  alt="facebook"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="item persons">
+            <img
+              src="./image/team/img3.jpg"
+              alt="Alex photo"
+              class="persons_photo"
+              width="270"
+            />
+            <p class="name">Tyler Moore</p>
+            <p class="work">UI Designer</p>
+            <div class="social">
+              <div class="social__icon">
+                <img
+                  src="./image/icon/instagram.svg"
+                  class="image__icon"
+                  alt="instagram"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/twitter.svg"
+                  class="image__icon"
+                  alt="twitter"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/linkedin.svg"
+                  class="image__icon"
+                  alt="linkedin"
+                />
+              </div>
+              <div class="social__icon">
+                <img
+                  src="./image/icon/facebook.svg"
+                  class="image__icon"
+                  alt="facebook"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h1 class="section__title">Regular Customers</h1>
+        <ul class="company">
+          <li class="company__logo">
+            <a href="#">
+              <img src="./image/company/group.png" alt="company" />
+            </a>
+          </li>
+          <li class="company__logo">
+            <a href="#">
+              <img src="./image/company/group1.png" alt="company" />
+            </a>
+          </li>
+          <li class="company__logo">
+            <a href="#">
+              <img src="./image/company/group2.png" alt="company" />
+            </a>
+          </li>
+          <li class="company__logo">
+            <a href="#">
+              <img src="./image/company/Logo.svg" alt="company" />
+            </a>
+          </li>
+          <li class="company__logo">
+            <a href="#">
+              <img src="./image/company/group4.png" alt="company" />
+            </a>
+          </li>
+          <li class="company__logo">
+            <a href="#">
+              <img src="./image/company/group5.png" alt="company" />
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <!-- footer -->
     <footer class="footer">
-
-        <div class="footer__content ">
-            <div class="footer__information footer__text">
-                <a href="#" class="logo logo__footer"><span>Web</span><span class="studio">Studio</span></a>
-                <address class="footer__address">
-                    695 Park Ave, New York, NY 10065,<br>United States
-                </address>
-                <a href="#" class="footer__item">iehorov1995@gmail.com</a>
-                <a href="#" class="footer__item">+0730927549</a>
-            </div>
-            <div class="footer__social">
-                <h2 class="footer__social--title footer__text">Find us on</h2>
-                <div class="footer__social--imges">
-                    <div class="social__icon"><img src="./image/footer/instagram.svg" class="image__icon" alt="instagram" >
-                    </div>
-                    <div class="social__icon"><img src="./image/footer/twitter.svg" class="image__icon" alt="twitter">
-                    </div>
-                    <div class="social__icon"><img src="./image/footer/linkedin.svg" class="image__icon" alt="linkedin">
-                    </div>
-                    <div class="social__icon"><img src="./image/footer/facebook.svg" class="image__icon" alt="facebook">
-                    </div>
-                </div>
-            </div>
-            <div class="footer__subscribe">
-                <h2 class="footer__subscribe--title">Підписатися на розсилку</h2>
-                <div class="footer__subscribe--block">
-                    <div class="footer__subscribe--input">
-                        <input type="mail" name="mail" id="mail" placeholder="E-mail">
-                    </div>
-                    <div class="footer__subscribe--booton">
-                        <label for="mail">
-                            <a href="#" class="booton">Підписка<span><img src="./image/footer/telegram.svg"
-                                        alt="Telegram"></span></a>
-                        </label>
-                    </div>
-    
-    
-                </div>
-
-            </div>
+      <div class="footer__content">
+        <div class="footer__information footer__text">
+          <a href="#" class="logo logo__footer"
+            ><span>Web</span><span class="studio">Studio</span></a
+          >
+          <address class="footer__address">
+            695 Park Ave, New York, NY 10065,<br />United States
+          </address>
+          <a href="#" class="footer__item">iehorov1995@gmail.com</a>
+          <a href="#" class="footer__item">+0730927549</a>
         </div>
+        <div class="footer__social">
+          <h2 class="footer__social--title footer__text">Find us on</h2>
+          <div class="footer__social--imges">
+            <div class="social__icon">
+              <img
+                src="./image/footer/instagram.svg"
+                class="image__icon"
+                alt="instagram"
+              />
+            </div>
+            <div class="social__icon">
+              <img
+                src="./image/footer/twitter.svg"
+                class="image__icon"
+                alt="twitter"
+              />
+            </div>
+            <div class="social__icon">
+              <img
+                src="./image/footer/linkedin.svg"
+                class="image__icon"
+                alt="linkedin"
+              />
+            </div>
+            <div class="social__icon">
+              <img
+                src="./image/footer/facebook.svg"
+                class="image__icon"
+                alt="facebook"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer__subscribe">
+          <h2 class="footer__subscribe--title">Підписатися на розсилку</h2>
+          <div class="footer__subscribe--block">
+            <div class="footer__subscribe--input">
+              <input type="mail" name="mail" id="mail" placeholder="E-mail" />
+            </div>
+            <div class="footer__subscribe--booton">
+              <label for="mail">
+                <a href="#" class="booton"
+                  >Підписка<span
+                    ><img
+                      src="./image/footer/telegram.svg"
+                      alt="Telegram" /></span
+                ></a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- form -->
-    <div  class=" popup" id="popup" 
-    >
-        <div class="popup__body">
-            <div class="popup__content block-form">
-                <a href="#header" class="popup__close"
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content block-form">
+          <a href="#header" class="popup__close">
+            <img
+              src="./image/icon/close.svg"
+              alt="close"
+              width="25px"
+              height="25px"
+            />
+          </a>
+          <div class="popup__title">
+            <h2>The mail</h2>
+          </div>
+          <div class="popup__text">
+            <label for="name" class="block-fail">
+              <input
+                type="text"
+                class="form-input"
+                name="name"
+                placeholder=" "
+              />
+              <span class="form-input_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000"
+                  viewBox="0 0 101 101"
+                  id="user"
                 >
-                    <img src="./image/icon/close.svg" alt="close" width="25px" height="25px">
-                </a>
-            <div class="popup__title">
-                <h2>
-                    The mail
-                </h2>
-            </div>
-            <div class="popup__text">
-    
-                <label for="name" class="block-fail">
-                    <input type="text" class="form-input" name="name" placeholder=" ">
-                    <span class="form-input_icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill='#000' viewBox="0 0 101 101" id="user">
-                            <path
-                                d="M50.4 54.5c10.1 0 18.2-8.2 18.2-18.2S60.5 18 50.4 18s-18.2 8.2-18.2 18.2 8.1 18.3 18.2 18.3zm0-31.7c7.4 0 13.4 6 13.4 13.4s-6 13.4-13.4 13.4S37 43.7 37 36.3s6-13.5 13.4-13.5zM18.8 83h63.4c1.3 0 2.4-1.1 2.4-2.4 0-12.6-10.3-22.9-22.9-22.9H39.3c-12.6 0-22.9 10.3-22.9 22.9 0 1.3 1.1 2.4 2.4 2.4zm20.5-20.5h22.4c9.2 0 16.7 6.8 17.9 15.7H21.4c1.2-8.9 8.7-15.7 17.9-15.7z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span class="form-label">
-                        Ім'я
-                    </span>
-                </label>
-                <label for="tel" class="block-fail">
-                    <input type="tel" name="tel" class="form-input" placeholder=" ">
-                    <span class="form-input_icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="phone" x="0" y="0" version="1.1" viewBox="0 0 29 29"
-                            xml:space="preserve">
-                            <path
-                                d="M20.666 27.021a5.907 5.907 0 0 1-2.934-.779l-.126-.071A39.137 39.137 0 0 1 3.491 12.355l-.657-1.095a5.849 5.849 0 0 1 .881-7.153l1.309-1.309c1.1-1.1 2.889-1.1 3.988 0l2.884 2.884a2.83 2.83 0 0 1 .464 3.378l-1.084 1.925a.213.213 0 0 0 .035.255l6.421 6.421a.216.216 0 0 0 .257.034l1.922-1.083.001-.001a2.832 2.832 0 0 1 3.378.464l2.885 2.886c1.1 1.1 1.1 2.889 0 3.988l-1.367 1.366a5.848 5.848 0 0 1-4.142 1.706zM7.018 3.973c-.21 0-.42.08-.58.24L5.129 5.521a3.85 3.85 0 0 0-.58 4.708l.657 1.095a37.13 37.13 0 0 0 13.389 13.107l.126.071c1.526.873 3.446.626 4.672-.602l1.367-1.366a.82.82 0 0 0 0-1.16l-2.885-2.886a.823.823 0 0 0-.983-.134l-1.922 1.083a2.222 2.222 0 0 1-2.652-.363l-6.421-6.421a2.218 2.218 0 0 1-.363-2.651l1.084-1.924a.824.824 0 0 0-.135-.982L7.598 4.213a.818.818 0 0 0-.58-.24z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span class="form-label">
-                        Телефон
-                    </span>
-                </label>
-        
-                <label for="mail" class="block-fail">
-                    <input type="mail" class="form-input" name="mail" placeholder=" ">
-                    <span class="form-input_icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000" data-name="Layer 1" viewBox="0 0 512 512" id="mail">
-                            <path
-                                d="M445.011,82.7H67.022a50.057,50.057,0,0,0-50,50V379.3a50.057,50.057,0,0,0,50,50H445.01a50.057,50.057,0,0,0,50-50V132.7A50.055,50.055,0,0,0,445.011,82.7Zm-88.9,173.232,118.9-93.318V371.352ZM67.022,102.7H445.01a30.034,30.034,0,0,1,30,30v4.49L282.6,288.208a39.972,39.972,0,0,1-49.246-.04L37.022,137.152V132.7A30.034,30.034,0,0,1,67.022,102.7Zm92.438,153.86L37.022,371.755V162.384ZM445.011,409.3H67.022a30.007,30.007,0,0,1-25.538-14.28l134.034-126.1L221.1,303.98a59.937,59.937,0,0,0,73.816-.019L340.235,268.4,470.6,394.94A30.011,30.011,0,0,1,445.011,409.3Z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span class="form-label">
-                        Почта
-                    </span>
-                </label>
-        
-                <label for="comment" class="block-fail_comments">
-                    <span class="form-label_comments">Коментарій</span>
-                    <textarea type="text" class="form-input" name="comment" placeholder="The fail comments"></textarea>
-        
-                </label>
-        
-        
-                <label class="block-fail block-fail_checbox">
-                    <input type="checkbox" name="check" class="checkbox" value="Ok">
-                    <span class="check-icon"></span>
-                    <span class="form-labl_comment"></span>Погоджуюсь на обробку
-                </label>
-        
-                <button class="button">Відправити</button>
-            </div>
-            </div>
+                  <path
+                    d="M50.4 54.5c10.1 0 18.2-8.2 18.2-18.2S60.5 18 50.4 18s-18.2 8.2-18.2 18.2 8.1 18.3 18.2 18.3zm0-31.7c7.4 0 13.4 6 13.4 13.4s-6 13.4-13.4 13.4S37 43.7 37 36.3s6-13.5 13.4-13.5zM18.8 83h63.4c1.3 0 2.4-1.1 2.4-2.4 0-12.6-10.3-22.9-22.9-22.9H39.3c-12.6 0-22.9 10.3-22.9 22.9 0 1.3 1.1 2.4 2.4 2.4zm20.5-20.5h22.4c9.2 0 16.7 6.8 17.9 15.7H21.4c1.2-8.9 8.7-15.7 17.9-15.7z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="form-label"> Ім'я </span>
+            </label>
+            <label for="tel" class="block-fail">
+              <input type="tel" name="tel" class="form-input" placeholder=" " />
+              <span class="form-input_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="phone"
+                  x="0"
+                  y="0"
+                  version="1.1"
+                  viewBox="0 0 29 29"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M20.666 27.021a5.907 5.907 0 0 1-2.934-.779l-.126-.071A39.137 39.137 0 0 1 3.491 12.355l-.657-1.095a5.849 5.849 0 0 1 .881-7.153l1.309-1.309c1.1-1.1 2.889-1.1 3.988 0l2.884 2.884a2.83 2.83 0 0 1 .464 3.378l-1.084 1.925a.213.213 0 0 0 .035.255l6.421 6.421a.216.216 0 0 0 .257.034l1.922-1.083.001-.001a2.832 2.832 0 0 1 3.378.464l2.885 2.886c1.1 1.1 1.1 2.889 0 3.988l-1.367 1.366a5.848 5.848 0 0 1-4.142 1.706zM7.018 3.973c-.21 0-.42.08-.58.24L5.129 5.521a3.85 3.85 0 0 0-.58 4.708l.657 1.095a37.13 37.13 0 0 0 13.389 13.107l.126.071c1.526.873 3.446.626 4.672-.602l1.367-1.366a.82.82 0 0 0 0-1.16l-2.885-2.886a.823.823 0 0 0-.983-.134l-1.922 1.083a2.222 2.222 0 0 1-2.652-.363l-6.421-6.421a2.218 2.218 0 0 1-.363-2.651l1.084-1.924a.824.824 0 0 0-.135-.982L7.598 4.213a.818.818 0 0 0-.58-.24z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="form-label"> Телефон </span>
+            </label>
+
+            <label for="mail" class="block-fail">
+              <input
+                type="mail"
+                class="form-input"
+                name="mail"
+                placeholder=" "
+              />
+              <span class="form-input_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000"
+                  data-name="Layer 1"
+                  viewBox="0 0 512 512"
+                  id="mail"
+                >
+                  <path
+                    d="M445.011,82.7H67.022a50.057,50.057,0,0,0-50,50V379.3a50.057,50.057,0,0,0,50,50H445.01a50.057,50.057,0,0,0,50-50V132.7A50.055,50.055,0,0,0,445.011,82.7Zm-88.9,173.232,118.9-93.318V371.352ZM67.022,102.7H445.01a30.034,30.034,0,0,1,30,30v4.49L282.6,288.208a39.972,39.972,0,0,1-49.246-.04L37.022,137.152V132.7A30.034,30.034,0,0,1,67.022,102.7Zm92.438,153.86L37.022,371.755V162.384ZM445.011,409.3H67.022a30.007,30.007,0,0,1-25.538-14.28l134.034-126.1L221.1,303.98a59.937,59.937,0,0,0,73.816-.019L340.235,268.4,470.6,394.94A30.011,30.011,0,0,1,445.011,409.3Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="form-label"> Почта </span>
+            </label>
+
+            <label for="comment" class="block-fail_comments">
+              <span class="form-label_comments">Коментарій</span>
+              <textarea
+                type="text"
+                class="form-input"
+                name="comment"
+                placeholder="The fail comments"
+              ></textarea>
+            </label>
+
+            <label class="block-fail block-fail_checbox">
+              <input type="checkbox" name="check" class="checkbox" value="Ok" />
+              <span class="check-icon"></span>
+              <span class="form-labl_comment"></span>Погоджуюсь на обробку
+            </label>
+
+            <button class="button">Відправити</button>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./js/script.js"></script>
-
-</body>
-
-
+  </body>
 </html>
